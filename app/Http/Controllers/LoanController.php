@@ -95,7 +95,7 @@ class LoanController extends Controller
 
         $notification = array(
                 'message' => 'Erro Desconhecido !', 
-                'alert-type' => 'success'
+                'alert-type' => 'error'
         );
         return redirect()->route('loan.index')->with($notification);
     }
